@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<title>Hover</title>
+		
+		<link rel="stylesheet" href="imagechanger.css">
+	
+	</head>
+	<body>
+		
+
+	      	<div class="container">
+			
+			    <div class="column">
+				
+			  	<div class="content">
+				
+          <h2 id="h_1"><a>ONE</a></h2>
+					
+					<div class="box">
+
+						<h1>THE TEXT</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia quae sit, ab voluptates odit quasi alias, reiciendis, veniam quo quibusdam. Molestiae sunt at, in neque, modi ex eveniet 
+						odio perferendis id debitis fuga illo. </p>
+					
+					    </div>
+					
+				            </div>
+				
+				          <div class="ig ig_1"></div>
+				
+			              </div>
+			
+			    <div class="column">
+				
+				<div class="content">
+				
+					<h2 id="h_2"><a>TWO</a></h2>
+					
+					<div class="box">
+								
+						<h1>THE TEXT</h1>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia quae sit, ab voluptates odit quasi alias, reiciendis, veniam quo quibusdam. Molestiae sunt at, in neque, modi ex eveniet odio perferendis id debitis fuga illo.</p>
+					
+					      </div>
+					
+				</div>
+				
+				<div class="ig ig_2"></div>
+				
+			       </div>
+			
+
+			    <div class="column">
+				
+				<div class="content">
+				
+        <h2 id="h_3"><a>THREE</a></h2>
+					
+					<div class="box">
+				     
+				     <h1>THE TEXT</h1>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia quae sit, ab voluptates odit quasi alias, reiciendis, veniam quo quibusdam. Molestiae sunt at, in neque, modi ex eveniet odio perferendis id debitis fuga illo. </p>
+					
+					</div>
+					
+				 </div>
+				
+				<div class="ig ig_3"></div>
+				
+		     	</div>
+			
+			      <div class="column">
+				
+		    		<div class="content">
+					
+				  	<h2 id="h_4"><a>FOUR</a></h2>
+					
+				  	<div class="box">
+						
+						<h1>THE TEXT</h1>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia quae sit, ab voluptates odit quasi alias, reiciendis, veniam quo quibusdam. Molestiae sunt at, in neque, modi ex eveniet odio perferendis id debitis fuga illo. </p>
+					
+					</div>
+					
+				</div>
+				
+				<div class="ig ig_4"></div>
+				
+			    </div>
+	
+		          </div>
+	
+
+		   <script>
+			 
+
+			    var G = document.getElementById("h_1").addEventListener("mouseover",jam);
+				var g = document.getElementById("h_1").addEventListener("mouseout",jam_1);
+
+
+                var H = document.getElementById("h_2").addEventListener("mouseover",jam_2);
+				var h = document.getElementById("h_2").addEventListener("mouseout",jam_3);
+
+
+				var I = document.getElementById("h_3").addEventListener("mouseover",jam_4);
+				var i= document.getElementById("h_3").addEventListener("mouseout",jam_5);
+
+
+				var J = document.getElementById("h_4").addEventListener("mouseover",jam_6);
+				var j = document.getElementById("h_4").addEventListener("mouseout",jam_7);
+
+
+			function jam(){
+document.getElementsByClassName('box')[0].setAttribute("style","opacity:1;");
+document.getElementById("h_1").setAttribute("style","opacity:0;");
+document.getElementsByClassName("ig_1")[0].setAttribute("style","z-index:-1;");
+
+
+}
+
+				function jam_1(){
+document.getElementsByClassName('box')[0].setAttribute("style","opacity:0; ");
+document.getElementById("h_1").setAttribute("style","opacity:1;");
+document.getElementsByClassName("ig_1")[0].setAttribute("style","z-index:-2;");
+
+}
+			
+
+	
+
+
+
+			function jam_2(){
+document.getElementsByClassName('box')[1].setAttribute("style","opacity:1;");
+document.getElementById("h_2").setAttribute("style","opacity:0;");
+document.getElementsByClassName("ig_2")[0].setAttribute("style","z-index:-1;");
+
+}
+				function jam_3(){
+document.getElementsByClassName('box')[1].setAttribute("style","opacity:0; ");
+document.getElementById("h_2").setAttribute("style","opacity:1;");
+document.getElementsByClassName("ig_2")[0].setAttribute("style","z-index:-3;");
+
+}
+
+
+
+
+
+
+
+
+			function jam_4(){
+document.getElementsByClassName('box')[2].setAttribute("style","opacity:1;");
+document.getElementById("h_3").setAttribute("style","opacity:0;");
+document.getElementsByClassName("ig_3")[0].setAttribute("style","z-index:-1;");
+
+}
+				function jam_5(){
+document.getElementsByClassName('box')[2].setAttribute("style","opacity:0 ;");
+document.getElementById("h_3").setAttribute("style","opacity:1;");
+document.getElementsByClassName("ig_3")[0].setAttribute("style","z-index:-4;");
+
+}
+
+
+
+
+
+
+
+			function jam_6(){
+document.getElementsByClassName('box')[3].setAttribute("style","opacity:1;");
+document.getElementById("h_4").setAttribute("style","opacity:0;");
+document.getElementsByClassName("ig_4")[0].setAttribute("style","z-index:-1;");
+
+}
+				function jam_7(){
+document.getElementsByClassName('box')[3].setAttribute("style","opacity:0; ");
+document.getElementById("h_4").setAttribute("style","opacity:1;");
+document.getElementsByClassName("ig_4")[0].setAttribute("style","z-index:-5;");
+
+}
+
+
+
+		</script>
+		</script>
+	
+	</body>
+</html>
