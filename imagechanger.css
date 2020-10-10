@@ -1,0 +1,144 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: boreder-box;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+display: flex;
+}
+
+.container .column{
+width: 25%;
+height: 100vh;
+border-right: 2px solid black;
+
+}
+
+.container .column .content h2{
+	background-color: grey;
+	color: white;
+    font-size: 2.7em;
+    letter-spacing:0.5em;
+    position: absolute;
+    top: 50%;
+text-align:center;
+
+display: inline-block;
+
+} 
+
+.container .column .content{
+	padding: 0px;
+	position: relative;
+	top: 50%;
+	transform:translateY(-50%);
+	}
+
+
+.container .column .content h2{
+	width: 100%;
+	font-size: 50px;
+	line-height: 100px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	display: inline-block;
+		cursor: pointer;
+		z-index: 200;
+transition: all;
+transition-duration:0.8s; 
+
+
+
+}
+
+
+
+.container .column .content .box{
+	background: grey;
+	word-spacing: 2px;
+opacity:0 ;
+transition: all;
+transition-duration:0.5s;
+height: 450px; 
+overflow: hidden;
+
+}
+
+.container .column .content .box p{
+font-size: 1.5em;
+text-align: center;
+padding: 22px;
+color: white;
+font-weight: bold;
+}
+
+.container .column .content .box h1{
+text-align: center;
+letter-spacing: 0.1em;
+padding-top: 20px;
+
+}
+
+.ig{
+z-index: -1;
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+transition: all;
+transition-duration: 0.4s;
+
+}
+
+.ig_1{
+	background-image:url('converse-all-star-low-top-sneakers-on-brown-wooden-surface-2530912 (1).jpg'); 
+	z-index: -2;
+
+}
+
+.ig_2{
+background-image:url('people-sitting-on-the-edge-of-a-cliff-3512848.jpg'); 
+	z-index: -3;
+
+
+
+}
+
+.ig_3{
+
+background-image:url('photo-of-red-flowering-trees-beside-body-of-water-1188214.jpg'); 
+	z-index: -4;
+
+}
+
+.ig_4{
+	background-image: url('man-in-red-jacket-standing-outside-of-cave-in-front-of-three-949193.jpg');
+	z-index: -5;
+
+
+}
+
+
+.container .column .content h2:hover{
+
+cursor: pointer;
+	background-image:url('converse-all-star-low-top-sneakers-on-brown-wooden-surface-2530912 (1).jpg'); 
+}
+
+
+
+@media only screen and (max-width:700px) {
+	 h2 a {
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+
+
+}
